@@ -1,9 +1,0 @@
-{
-  "files.associations": {
-    "qpc.h": "c",
-    "qp_port.h": "c",
-    "qp_config.h": "c",
-    "qs_dummy.h": "c",
-    "qsafe.h": "c"
-  }
-}

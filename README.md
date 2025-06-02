@@ -1,3 +1,3 @@
-# qpc_euchre
+# qpc
 
-A little experimentation with C23, QP/C and Euchre simulation.
+A little experimentation with C23, CMake, and QP/C.

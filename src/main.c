@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "bsp.h"
+#include "ping.h"
 
 int main(void)
 {
-  const char *msg[] = {"Hello", "C", "World", "from", "VS Code", "and the C extension!"};
-  size_t msg_count = sizeof(msg) / sizeof(msg[0]);
+  BSP_init();
 
-  for (size_t i = 0; i < msg_count; i++)
-  {
-    printf("%s ", msg[i]);
-  }
-  printf("\n");
+  QF_init();
 
-  return 0;
+  PingCounter_ctor();
+
+  PingCounter_start(1U);
+
+  return QF_run();
 }
